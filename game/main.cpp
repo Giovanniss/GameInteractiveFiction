@@ -1,9 +1,10 @@
 #include <iostream>
+#include <structs.h>
+#include <engine.h>
 
 using namespace std;
 
-int main()
-{
-    cout << "Hello world!" << endl;
+int main(){
+    readGame("game.txt");
     return 0;
 }
