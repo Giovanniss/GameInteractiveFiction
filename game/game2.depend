@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1528860122 source:/home/giovanni/Área de Trabalho/Projeto/GameInteractiveFiction/game/main.cpp
+	<iostream>
+	"teste.h"
+
+1528860103 /home/giovanni/Área de Trabalho/Projeto/GameInteractiveFiction/game/include/teste.h
+

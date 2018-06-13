@@ -1,4 +1,5 @@
 #include "json.h"
+#include "game.h"
 #include "structs.h"
 #include <iostream>
 #include <string>
