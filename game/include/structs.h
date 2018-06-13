@@ -5,14 +5,33 @@
 #include <vector>
 #include <stack>
 #include <queue>
-#include <structs.h>
+#include "structs.h"
 #include <fstream>
 #include <iomanip>
 
-
 using namespace std;
 
-//colocar as estruturas necessárias para o desenvolv do projeto
+struct Node {
+    string key; // id da cena
+    int index; // posição da cena dentro do vector
+    Node* next;
+};
+
+// hash para indexar as cenas que estão no vector
+// o vector<Scene> está dentro de Game
+struct Hash {
+    // maximo de posicoes da tabela
+    static const int MAX = 7;
+    // array de listas encadeadas
+    Node* table[MAX];
+};
+
+struct Command {
+    string text; // texto do comando
+    string result; // resultado ao utilizar o comando
+    string outcome; // ID da cena algo ou NONE (dead end)
+};
+
 struct Scene {
     // ID da cena
     string id;
@@ -23,6 +42,7 @@ struct Scene {
     // vetor de comandos da cena
     vector<Command> comands;
 };
+
 struct Game {
     // guarda as cenas
     vector<Scene> scenes;
@@ -30,21 +50,6 @@ struct Game {
     Hash hash;
     // indice da cena atual
     int current;
-};
-
-struct Hash {
-    // maximo de posicoes da tabela
-    static const int MAX = 100;
-    // array de listas encadeadas
-    Node* table[MAX];
-};
-struct Command {
-    // texto do comando
-    string text;
-    // resultado ao utilizar o comando
-    string result;
-    // ID da cena algo ou NONE (dead end)
-    string outcome;
 };
 
 #endif // STRUCTS_H

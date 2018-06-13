@@ -15,7 +15,5 @@ using namespace std;
 //inserir o nome da funcao fechando com ;
 // por exemplo:
 // void inserirFuncao(int e);
-void readGame(string fileName);
-void readString(string sub);
 
 #endif // ENGINE_H
