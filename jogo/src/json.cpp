@@ -1,13 +1,5 @@
 #include "json.h"
-#include "game.h"
-#include "structs.h"
-#include <iostream>
-#include <string>
-#include <vector>
-#include <stack>
-#include <queue>
-#include <fstream>
-#include <iomanip>
+
 
 
 //colocar as funcoes programadas
@@ -47,8 +39,3 @@ vector<Scene> getScenes(ifstream &infile){
         cout << line << endl;
     }
 }
-
-
-
-
-

@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1528937673 source:/home/giovanni/Área de Trabalho/Projeto/GameInteractiveFiction/jogo/main.cpp
+	<iostream>
+	"structs.h"
+
+1528937654 /home/giovanni/Área de Trabalho/Projeto/GameInteractiveFiction/jogo/include/structs.h
+	<vector>
+	<string>
+
